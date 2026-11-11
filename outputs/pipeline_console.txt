@@ -1,0 +1,41 @@
+[LOAD] ev_campus_dataset.csv: 1200 rows x 9 cols
+[CLEAN] Charger_Type: all labels valid ['AC', 'DC']
+[CLEAN] User_Type: all labels valid ['Staff', 'Student', 'Visitor']
+[CLEAN] Grid_Status_Label: all labels valid ['Grid_Surge', 'Normal', 'Overheated']
+[CLEAN] Duration_Mins: imputed 25 missing value(s) with median 97.00
+[CLEAN] Energy_kWh: imputed 35 missing value(s) with median 13.28
+[LOAD] sales_data.csv: 500 rows x 9 cols
+[CLEAN] Hub_Location: all labels valid ['KL_Campus_Hub', 'Lakeside_Hub', 'Subang_Hub', 'Taylor_Tower_Hub']
+[CLEAN] Category: all labels valid ['Charging_Service', 'EV_Accessory', 'Energy_Credit', 'Fleet_Pass']
+[CLEAN] Customer_Type: all labels valid ['Public_Fleet', 'Staff', 'Student']
+[CLEAN] Payment_Method: all labels valid ['Campus_Wallet', 'Credit_Card', 'TouchNGo']
+[CLEAN] Total_Revenue_MYR: rebuilt 19 value(s) from units x price
+[CLEAN] Units_Sold: imputed 15 missing value(s) with median 5.00
+[CLEAN] Total_Revenue_MYR: imputed 1 missing value(s) with median 105.00
+[EXPORT] cleaned_energy_sales_data.csv: 1200 rows saved
+[EXPORT] cleaned_sales_data.csv: 500 rows saved
+
+======================================================================
+SUMMARY STATISTICS - cleaned_energy_sales_data.csv
+======================================================================
+Sessions: 1200 | Missing values left: 0
+       Duration_Mins  Energy_kWh  Power_Rate_kW  Carbon_Savings_kgCO2  Battery_Temp_C  Net_Billable_MYR
+count        1200.00     1200.00        1200.00               1200.00         1200.00           1200.00
+mean           93.76       15.53          14.09                  7.37           35.01             14.46
+std            42.86        7.43          11.53                  3.53            6.04              7.27
+min            15.00        3.66           3.91                  1.74           17.60              3.75
+25%            55.00       10.54           5.66                  5.01           30.70             10.50
+50%            97.00       13.28           6.57                  6.31           34.40             13.20
+75%           126.00       18.40          26.99                  8.75           39.10             16.42
+max           214.00       49.64          53.12                 23.58           56.60             96.25
+
+Revenue and energy by charger type:
+              Sessions  Energy_kWh  Revenue_MYR
+Charger_Type                                   
+AC                 784     9244.48     11312.42
+DC                 416     9385.61      6042.48
+
+Total energy delivered : 18,630.09 kWh
+Total carbon offset    : 8,849.12 kg
+Total net revenue      : RM 17,354.90
+======================================================================

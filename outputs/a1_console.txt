@@ -1,0 +1,27 @@
+
+--- NumPy 1 - 2D slicing of peak hours ---
+Grid-load matrix shape (days, hours): (20, 24)
+Peak-window slice shape            : (20, 6)
+Mean peak load  :    818.6 kW
+Highest reading :   1108.1 kW at day 11
+
+--- NumPy 2 - boolean mask > 45 C ---
+Sessions above 45 C: 77 of 1200 (6.4%); hottest = 56.6 C
+
+--- Pandas 1 - median imputation ---
+Missing before: {'Energy_kWh': 35, 'Duration_Mins': 25}
+Missing after : {'Energy_kWh': 0, 'Duration_Mins': 0}
+
+--- Pandas 2 - groupby revenue ---
+                        count      sum   mean
+Charger_Type User_Type                       
+AC           Staff        279  3941.35  14.13
+             Student      392  5675.02  14.48
+             Visitor      113  1696.05  15.01
+DC           Staff        155  2146.19  13.85
+             Student      204  2964.70  14.53
+             Visitor       57   931.59  16.34
+
+--- Benchmark: 1,000,000 carbon calculations ---
+Python loop :   179.20 ms
+NumPy vector:     3.29 ms  (~55x faster)

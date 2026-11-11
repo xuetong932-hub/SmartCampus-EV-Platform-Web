@@ -1,0 +1,5 @@
+                Ambient_Temp_C  Duration_Mins  Grid_Load_kW
+Ambient_Temp_C           1.000         -0.008         0.890
+Duration_Mins           -0.008          1.000        -0.078
+Grid_Load_kW             0.890         -0.078         1.000
+[FIGURE] saved A_c_chart1_multibar.png, A_c_chart2_heatmap.png

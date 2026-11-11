@@ -1,0 +1,8 @@
+# Smart Campus Energy & EV Fleet Platform
+# Tested with Python 3.14 and the versions noted on the right.
+numpy>=2.0          # tested 2.4.6
+pandas>=2.2         # tested 3.0.3
+matplotlib>=3.8     # tested 3.11.0
+seaborn>=0.13       # tested 0.13.2
+plotly>=5.20        # tested 6.7.0
+streamlit>=1.50     # tested 1.58.0 (st.navigation, width="stretch")

@@ -1,0 +1,5 @@
+[FIGURE] saved outputs\figures\B_b_dashboard_three_panels.png
+[FIGURE] saved outputs\figures\B_b_panel1_grid_vs_solar.png
+[FIGURE] saved outputs\figures\B_b_panel2_cost_by_user.png
+[FIGURE] saved outputs\figures\B_b_panel3_temp_vs_energy.png
+[INSIGHT] Energy rises ~0.59 kWh per +1 C battery temp.
