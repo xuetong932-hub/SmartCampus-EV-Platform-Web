@@ -7,6 +7,8 @@ publication-quality charts and a multi-page **Streamlit** dashboard that help
 campus facility managers watch grid load, charging revenue, carbon savings and
 battery-safety alerts.
 
+**🌐 Live app:** https://smartcampus-ev.streamlit.app
+
 **Video demonstration:** https://youtu.be/&lt;your-video-id&gt;
 
 ---
